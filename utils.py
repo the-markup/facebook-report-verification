@@ -17,6 +17,10 @@ def load_csv(path):
     return pd.read_csv(path, comment="#")
 
 
+def save_tabular(name, df, data_path=Path("./data/")):
+    df.to_csv(data_path / f"{name}.csv")
+
+
 def cached_sql_query(db, query, params=None, cache_root=Path("./data/")):
     params = params or dict()
     query_hash = hashlib.md5((query + str(params)).encode("utf8")).hexdigest()
