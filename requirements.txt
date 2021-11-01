@@ -1,0 +1,11 @@
+scipy
+pandas
+rbo
+tldextract
+sqlalchemy
+
+tqdm
+jupyter
+matplotlib
+seaborn
+dataframe_image
