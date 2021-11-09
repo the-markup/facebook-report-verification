@@ -184,7 +184,7 @@ if __name__ == "__main__":
 
     db_params = {
         "endpoint": "citizenbrowser.cjfrb8ed0b9b.us-east-2.rds.amazonaws.com",
-        "profile": "markup_prod",
+        "profile": "production",
     }
     with closing(rds_connect(**db_params)) as db:
         data = FBCBData(db)
