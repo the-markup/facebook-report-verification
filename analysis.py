@@ -71,8 +71,8 @@ def load_cb_unsponsored(db, data_root):
     ORDER BY unique_users DESC
     """
     params = {
-        "start_date": date(2021, 4, 1),
-        "end_date": date(2021, 6, 30),
+        "start_date": date(2021, 7, 1),
+        "end_date": date(2021, 10, 1),
     }
     cb = cached_sql_query(
         db, query, params=params, cache_root=data_root / "query_cache/"
