@@ -100,7 +100,7 @@ class FBCBData:
         return load_high_viewership(self.db, self.data_root)
 
     def _load_fb(self, data_root):
-        fb = load_csv(data_root / "fb-transparency-q2-domains.csv")
+        fb = load_csv(data_root / "fb-transparency-q3-domains.csv")
         fb["rank"] = fb["rank"].astype("int")
         fb["unique_users"] = fb["unique_users"].astype("int")
         return fb
